@@ -3,6 +3,7 @@ from yt_concatenate.pipeline.setps.download_captions import DownloadCaptions
 from yt_concatenate.pipeline.setps.step import StepException
 from yt_concatenate.pipeline.setps.preflight import Preflight
 from yt_concatenate.pipeline.setps.postflight import Postflight
+from yt_concatenate.pipeline.setps.read_caption import ReadCaption
 from yt_concatenate.utilities import Utils
 
 
@@ -20,6 +21,7 @@ def main():
         Preflight(),
         GetVideoList(),
         DownloadCaptions(),
+        ReadCaption(),
         Postflight(),
     ]
 
