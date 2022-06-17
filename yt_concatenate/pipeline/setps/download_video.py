@@ -18,8 +18,8 @@ class DownloadVideo(Step):
             print('下載中:', url)
             YouTube(url).streams.first().download(output_path=VIDEOS_DIR, filename=yt.id + '.mp4')
             # first 改成 get_highest_resolution()可以下載高畫質影片
-        return data
 
+        return data
             # yt = YouTube('http://youtube.com/watch?v=2lAe1cqCOXo')
             # yt.streams
             # filter(progressive=True, file_extension='mp4')
